@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Tasty - Slides</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
+html,body{height:100%}
+body{overflow:hidden;background:#111;color:#fff}
+
+#slides{height:100%;width:100%;transition:transform .6s ease}
+.slide{
+  height:100vh;width:100vw;display:flex;align-items:center;justify-content:center;
+  padding:40px;text-align:center
+}
+
+/* Background */
+.s1{background:url('bg1.jpg') center/cover no-repeat}
+.s2{background:url('bg2.jpg') center/cover no-repeat}
+.s3{background:url('bg3.jpg') center/cover no-repeat}
+.s4{background:url('bg4.jpg') center/cover no-repeat}
+.s5{background:url('bg5.jpg') center/cover no-repeat}
+.s6{background:url('bg6.jpg') center/cover no-repeat}
+.s7{background:#000}
+
+.card{
+  width:90%;max-width:1100px;
+  height:85vh;
+  background:rgba(0,0,0,.4);
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 10px 24px rgba(0,0,0,.35);
+  display:flex;
+  flex-direction:column;
+}
+
+h1{font-size:48px;margin-bottom:10px}
+h2{font-size:34px;margin-bottom:12px}
+h3{font-size:22px;margin-bottom:6px}
+p,li{font-size:16px;line-height:1.6;text-align:justify}
+ul{margin-left:18px}
+
+.content{
+  flex:1;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  overflow:auto;
+  padding-right:6px;
+}
+
+.box{
+  background:rgba(255,255,255,.08);
+  border-radius:12px;
+  padding:16px;
+}
+
+.center{
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+/* Nav */
+.nav{
+  position:fixed;left:0;right:0;bottom:20px;display:flex;justify-content:center;gap:12px
+}
+button{
+  border:none;border-radius:999px;padding:10px 22px;font-weight:700;cursor:pointer
+}
+#prev{background:#ddd}
+#next{background:#ff9a1f}
+.indicator{
+  position:fixed;top:12px;right:12px;font-size:14px;opacity:.9
+}
+</style>
+</head>
+<body>
+
+<div id="slides">
+
+<!-- Slide 1 -->
+<section class="slide s1">
+  <div class="card center">
+    <h1>WELCOME TO LIST TASTY</h1>
+    <p><em>Good food, good mood</em></p>
+  </div>
+</section>
+
+<!-- Slide 2: Our Menu + Penjelasan -->
+<section class="slide s2">
+  <div class="card">
+    <h2>Our Menu</h2>
+    <div class="content">
+      <div class="box">
+        <h3>Caesar Salad (Appetizer)</h3>
+        <p>Caesar Salad adalah makanan sehat yang terbuat dari berbagai macam sayuran segar yang disajikan mentah atau setengah matang, lalu dicampur dengan saus tertentu. Salad sayur kaya akan vitamin, mineral, dan serat yang bermanfaat untuk menjaga kesehatan tubuh dan melancarkan pencernaan.</p>
+      </div>
+      <div class="box">
+        <h3>Spaghetti Bolognese (Main Course)</h3>
+        <p>Spaghetti Bolognese adalah Hidangan pasta klasik yang berasal dari Italia, terdiri dari pasta spaghetti yang disajikan dengan saus daging giling (bolognese) yang kaya rasa. Saus ini umumnya terbuat dari daging sapi giling, tomat, bawang, wortel, dan seledri, seringkali diperkaya dengan herba seperti oregano atau basil.</p>
+      </div>
+      <div class="box">
+        <h3>Custard (Dessert)</h3>
+        <p>Custard adalah makanan penutup berbahan dasar susu dan telur yang memiliki tekstur lembut dan rasa manis. Custard (berasal dari bahasa Prancis kuno "croustade" yang berarti kue dengan kerak/pinggiran).</p>
+      </div>
+      <div class="box">
+        <h3>Corndog (Menu Spesial)</h3>
+        <p>Corndog adalah sosis yang dilapisi adonan tepung lalu digoreng hingga renyah di luar dan lembut di dalam. Corndog (Gabungan dari "Corn" karena menggunakan tepung jagung dan "Dog" dari istilah Hot Dog).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 3: Caesar Salad -->
+<section class="slide s3">
+  <div class="card">
+    <h2>Caesar Salad</h2>
+    <div class="content">
+      <div class="box">
+        <h3>Sejarah</h3>
+        <p>Sejarah salad sayur berakar dari peradaban Mesopotamia, Yunani, dan Romawi kuno 4.000 tahun lalu, di mana sayuran mentah disajikan dengan saus garam, minyak, dan cuka. Berkembang pesat di Eropa abad pertengahan dan populer di AS abad ke-20, salad bertransformasi dari pelengkap menjadi hidangan utama yang beragam seperti Caesar dan Waldorf. .</p>
+      </div>
+      <div class="box">
+        <h3>Bahan-bahan</h3>
+        <ul>
+          <li>Selada</li>
+          <li>Wortel</li>
+          <li>Timun</li>
+          <li>Tomat</li>
+          <li>Jagung direbus</li>
+          <li>Mayones</li>
+          <li>Jeruk Nipis/Lemon</li>
+        </ul>
+        <h3>Proses Membuat</h3>
+        <ul>
+          <li>1. Cuci bersih semua sayuran dengan air mengalir.</li>
+          <li>2. Potong selada, wortel, timun, dan tomat sesuai kebutuhan.</li>
+          <li>3. Masukkan semua sayuran ke dalam wadah atau mangkuk besar.</li>
+          <li>4. Tambahkan jagung yang telah di rebus.</li>
+          <li>5. Tuangkan mayonas dan peras jeruk nipis/lemon secukupnya.</li>
+          <li>6. Aduk hingga semua bahan tercampur rata, lalu salad siap disajikan.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 4: Spaghetti -->
+<section class="slide s4">
+  <div class="card">
+    <h2>Spaghetti Bolognese</h2>
+    <div class="content">
+      <div class="box">
+        <h3>Sejarah</h3>
+        <p>Spaghetti Bolognese, atau ragù alla bolognese, berasal dari Bologna, Italia, yang berevolusi dari ragout daging Prancis abad ke-18 menjadi saus daging kental dengan tomat. Hidangan ini secara tradisional disajikan dengan tagliatelle, bukan spaghetti, dan menjadi populer secara internasional setelah Perang Dunia II sebagai versi adaptasi yang lebih sederhana.</p>
+      </div>
+      <div class="box">
+        <h3>Bahan-bahan</h3>
+        <ul>
+          <li>250-500 gr daging sapi giling</li>
+          <li>1 buah bawang bombay, dicincang halus</li>
+          <li>2-3 siung bawang putih, dicincang halus</li>
+          <li>1 buah wortel</li>
+          <li>1 batang seledri, cincang halus</li>
+          <li>1 kaleng tomat potong (chopped tomato) atau 4-5 buah tomat segar di blender</li>
+          <li>3 sdm pasta tomat atau saus tomat</li>
+          <li>1 sdt oregano kering/Italian herb</li>
+          <li>Garam, merica, dan gula pasir secukupnya</li>
+          <li>Minyak zaitun/minyak goreng untuk menumis</li>
+          <li>Air/kaldu secukupnya</li>
+        </ul>
+        <h3>Proses Membuat</h3>
+        <ul>
+          <li>1. Panaskan minyak zaitun. Tumis bawang bombay dan bawang putih hingga harum dan layu. Jika menggunakan wortel dan seledri, maka masukkan dan tumis hingga lunak.</li>
+          <li>2. Masukkan daging sapi giling, tumis hingga berubah warna menjadi cokelat dan tidak berair.</li>
+          <li>3. Masukkan tomat yang sudah diblender/kaleng, saus tomat, oregano, garam, merica, dan gula pasir.Kemudian aduk rata.</li>
+          <li>4. Tambahkan sedikit air atau kaldu. Tutup wajan dan masak dengan api kecil selama 20-30 menit hingga saus mengental dan bumbu meresap.</li>
+          <li>5. Sambil menunggu saus, rebus spaghetti dalam air mendidih yang diberi garam hingga tingkat kematangan al dente (matang tapi masih kenyal). Kemudian tiriskan.</li>
+          <li>6. Tata spaghetti di piring, siram dengan saus bolognese di atasnya. Tambahkan keju sesuai selera.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 5: Custard -->
+<section class="slide s5">
+  <div class="card">
+    <h2>Custard</h2>
+    <div class="content">
+      <div class="box">
+        <h3>Sejarah</h3>
+        <p>Custard telah dikenal sejak zaman Romawi Kuno. Awalnya, orang Romawi menemukan kemampuan telur untuk mengikat cairan saat dipanaskan. Pada Abad Pertengahan, custard biasanya digunakan sebagai isian kue (pie). Namun, baru pada abad ke-19, custard mulai berdiri sendiri sebagai hidangan penutup yang lembut (seperti pudding) atau saus siram (crème anglaise).</p>
+      </div>
+      <div class="box">
+        <h3>Bahan-bahan</h3>
+        <ul>
+          <li>Kuning Telur: Sebagai pengental alami dan pemberi tekstur creamy</li>
+          <li>Susu atau Krim: Memberikan rasa gurih</li>
+          <li>Gula</li>
+          <li>Vanila</li>
+          <li>Maizena/Tepung (Opsional)</li>
+        </ul>
+        <h3>Proses Membuat</h3>
+        <ul>
+          <li>1. Mixing: Campurkan kuning telur dan gula hingga pucat.</li>
+          <li>2. Tempering: Panaskan susu hingga hampir mendidih, lalu tuang sedikit demi sedikit ke adonan telur sambil terus diaduk (teknik ini mencegah telur matang mendadak/menggumpal).</li>
+          <li>3. Thickening: Panaskan kembali campuran tersebut dengan api kecil hingga mengental.</li>
+          <li>4. Chilling: Dinginkan di lemari es sebelum disajikan.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 6: Corndog -->
+<section class="slide s6">
+  <div class="card">
+    <h2>Corndog</h2>
+    <div class="content">
+      <div class="box">
+        <h3>Sejarah</h3>
+        <p>Corndog dipatenkan pertama kali di Amerika Serikat pada tahun 1927, namun mulai populer secara luas pada 1940-an di pameran negara bagian (State Fair). Di tahun 2026, variasi Korean Corndog (dengan isian keju mozarella dan lapisan kentang) masih menjadi tren global karena teksturnya yang lebih unik dan crunchy.</p>
+      </div>
+      <div class="box">
+        <h3>Bahan-bahan</h3>
+        <ul>
+          <li>Sosis atau Keju Mozarella: Sebagai isian utama</li>
+          <li>Tepung Jagung (Cornmeal): Memberikan rasa khas dan warna keemasan</li>
+          <li>Tepung Terigu: Untuk tekstur adonan</li>
+          <li>Baking Powder: Agar lapisan mengembang</li>
+          <li>Tusuk Sate: Gagang untuk memegang</li>
+        </ul>
+        <h3>Proses Membuat</h3>
+        <ul>
+          <li>1. Tusuk sosis atau mozarella dengan tusuk sate. Keringkan permukaannya agar adonan menempel sempurna.</li>
+          <li>2. Campur tepung jagung, terigu, telur, dan susu hingga menjadi adonan yang sangat kental. Masukkan ke dalam gelas tinggi.</li>
+          <li>3. Celupkan sosis ke dalam gelas berisi adonan hingga tertutup rata.</li>
+          <li>4. Goreng dalam minyak banyak (deep fry) yang panas hingga berwarna cokelat keemasan.</li>
+          <li>5. Beri tambahan saus sambal dan mustard.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 7: Teka-teki uyyy -->
+<section class="slide s7">
+  <div class="card center">
+    <h2>Misteri menu tersembunyi!!</h2>
+    <p>Jawab pertanyaan ini untuk membuka hadiah:</p>
+    <p><b>Apa menu spesial dari List Tasty?</b></p>
+
+    <input id="jawaban" type="text" placeholder="Ketik jawaban di sini woyy..." 
+           style="padding:10px;border-radius:8px;border:none;margin-top:10px;width:250px">
+
+    <br><br>
+    <button onclick="cekJawaban()">Cek Jawaban</button>
+
+    <div id="hadiahBox" style="margin-top:20px; display:none;">
+      <h3> Selamat Mpruyy! Ini dia menu rahasia kami!!</h3>
+      <img src="hadiah.jpg" alt="Hadiah" style="max-width:300px;border-radius:12px;margin-top:10px;">
+    </div>
+
+    <p id="pesan" style="margin-top:15px;"></p>
+  </div>
+</section>
+
+</div>
+
+<div class="nav">
+  <button id="prev">Prev</button>
+  <button id="next">Next</button>
+</div>
+<div class="indicator" id="ind">Slide 1 / 7</div>
+
+<script>
+const slides = document.getElementById('slides');
+const total = 7;
+let idx = 0;
+
+function update() {
+  slides.style.transform = `translateY(-${idx * 100}vh)`;
+  document.getElementById('ind').textContent = `Slide ${idx + 1} / ${total}`;
+}
+
+document.getElementById('next').onclick = () => {
+  if (idx < total - 1) {
+    idx++;
+    update();
+  }
+};
+
+document.getElementById('prev').onclick = () => {
+  if (idx > 0) {
+    idx--;
+    update();
+  }
+};
+
+// === PUZZLE ===
+function cekJawaban() {
+  const j = document.getElementById("jawaban").value.toLowerCase().trim();
+  const pesan = document.getElementById("pesan");
+  const hadiah = document.getElementById("hadiahBox");
+
+  if (j === "corndog") {
+    hadiah.style.display = "block";
+    pesan.textContent = "Ini menu rahasia kami!! Bakcang SUPER!!!";
+  } else {
+    pesan.textContent = "Gini doang gak bisa, kocak2";
+  }
+}
+</script>
+
+</body>
+</html>
